@@ -49,14 +49,21 @@ img {
 }
 
 .hlavni-recept {
-  background-image: url(images/burger.jpg); 
-  background-size: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/burger.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 200px;
   border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+
 .recept {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-size: 100%;
   background-position: center;
   min-height: 90px;
@@ -64,19 +71,19 @@ img {
 }
 
 .recept2 {
-  background-image: url(images/sushi.jpg); 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/sushi.jpg); 
 }
 
 .recept3 {
-  background-image: url(images/rajcata.jpg); 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rajcata.jpg); 
 }
 
 .recept4 {
-  background-image: url(images/kure.jpg); 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/kure.jpg); 
 }
 
 .recept5 {
-  background-image: url(images/grilovani.jpg); 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/grilovani.jpg); 
 }
 
 .recept-meta {
@@ -97,8 +104,8 @@ img {
 }
 
 .hlavni-recept .recept-nazev {
-  position: relative;
-  top: 80px;
+  /* position: relative;
+  top: 80px; */
   font-size: 28px;
 }
 
@@ -129,8 +136,8 @@ p {
   }
 
   .recept-nazev {
-    position: relative;
-    top: 20px;
+    /* position: relative;
+    top: 20px; */
     font-size: 22px;
   }
 }
@@ -147,7 +154,8 @@ p {
 
   .recept {
     min-height: 200px;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hlavni-recept {
@@ -157,8 +165,8 @@ p {
 
   .hlavni-recept .recept-nazev {
     font-size: 48px;
-    position: relative;
-    top: 200px;
+    /* position: relative; */
+    /* top: 200px; */
   }
 
   .recept-kategorie, .recept-komentare {
@@ -166,8 +174,8 @@ p {
   }
 
   .recept-nazev {
-    position: relative;
-    top: 60px;
+    /* position: relative;
+    top: 60px; */
     font-size: 28px;
   }
 }
